@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#59A926">
+		<meta name="theme-color" content="#59A926">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<button class="mob_close_btn"></button>
+
+					<div class="mob_scroll">
+						<div class="info">
+							<div class="cont row">
+								<a href="/" class="logo">
+									<img src="images/logo.svg" alt="">
+								</a>
+
+								<div class="data">
+									<div class="row">
+										<div class="location">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_location"></use></svg>
+											<span>Московская обл., г. Пущино, мкр. «В», д. 6А, офис 201</span>
+										</div>
+
+										<div class="email">
+											<a href="mailto:info@biopik.ru">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+												<span>info@biopik.ru</span>
+											</a>
+										</div>
+
+										<div class="phone">
+											<a href="tel:84957903363">8 (495)-790-33-63</a>
+										</div>
+
+										<button class="callback_btn modal_btn" data-modal="#callback_modal">Заказать обратный звонок</button>
+									</div>
+
+									<div class="row">
+										<div class="search">
+											<form action="">
+												<input type="text" name="" value="" class="input">
+
+												<div class="label">
+													<span>Поиск по сайту, например <a href="/">весы прецизионные</a></span>
+												</div>
+
+												<button type="submit" class="submit_btn">
+													<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+												</button>
+											</form>
+										</div>
+
+										<a href="/" class="cart_link">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+											<span>1 671 548,93 руб.</span>
+											<div class="count">5</div>
+										</a>
+									</div>
+
+									<div class="row">
+										<div class="catalog modal_cont">
+											<button class="btn mini_modal_btn" data-modal-id="#catalog_modal">
+												<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+												<span>Каталог</span>
+											</button>
+
+											<div class="mini_modal" id="catalog_modal">
+												<div class="item">
+													<a href="/" class="sub_link">
+														<span>Оборудование</span>
+														<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arr_left"></use></svg>
+													</a>
+
+													<div class="level3">
+														<div><a href="/">Автоматические дозаторы</a></div>
+														<div><a href="/">Весы</a></div>
+														<div><a href="/">Центрифуги</a></div>
+														<div><a href="/">Морозильники (Кельвинаторы)</a></div>
+														<div><a href="/">Бактерицидные облучатели</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="sub_link">
+														<span>Пластик</span>
+														<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arr_left"></use></svg>
+													</a>
+
+													<div class="level3">
+														<div><a href="/">Автоматические дозаторы</a></div>
+														<div><a href="/">Весы</a></div>
+														<div><a href="/">Центрифуги</a></div>
+														<div><a href="/">Морозильники (Кельвинаторы)</a></div>
+														<div><a href="/">Бактерицидные облучатели</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="sub_link">
+														<span>Реактивы</span>
+														<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arr_left"></use></svg>
+													</a>
+
+													<div class="level3">
+														<div><a href="/">Автоматические дозаторы</a></div>
+														<div><a href="/">Весы</a></div>
+														<div><a href="/">Центрифуги</a></div>
+														<div><a href="/">Морозильники (Кельвинаторы)</a></div>
+														<div><a href="/">Бактерицидные облучатели</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="sub_link">
+														<span>Мебель</span>
+														<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arr_left"></use></svg>
+													</a>
+
+													<div class="level3">
+														<div><a href="/">Автоматические дозаторы</a></div>
+														<div><a href="/">Весы</a></div>
+														<div><a href="/">Центрифуги</a></div>
+														<div><a href="/">Морозильники (Кельвинаторы)</a></div>
+														<div><a href="/">Бактерицидные облучатели</a></div>
+													</div>
+												</div>
+
+												<div class="item">
+													<a href="/" class="sub_link">
+														<span>Алфавитный указатель</span>
+														<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arr_left"></use></svg>
+													</a>
+
+													<div class="level3">
+														<div><a href="/">Автоматические дозаторы</a></div>
+														<div><a href="/">Весы</a></div>
+														<div><a href="/">Центрифуги</a></div>
+														<div><a href="/">Морозильники (Кельвинаторы)</a></div>
+														<div><a href="/">Бактерицидные облучатели</a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<nav class="menu row">
+											<div class="menu_item">
+												<a href="/" class="sub_link">
+													<img data-src="images/tmp/ic_category.png" alt="" class="icon lazyload">
+													<span>Оборудование</span>
+												</a>
+											</div>
+
+											<div class="menu_item">
+												<a href="/">
+													<img data-src="images/tmp/ic_category2.png" alt="" class="icon lazyload">
+													<span>Пластик</span>
+												</a>
+											</div>
+
+											<div class="menu_item">
+												<a href="/">
+													<img data-src="images/tmp/ic_category3.png" alt="" class="icon lazyload">
+													<span>Реактивы</span>
+												</a>
+											</div>
+
+											<div class="menu_item">
+												<a href="/">
+													<img data-src="images/tmp/ic_category4.png" alt="" class="icon lazyload">
+													<span>Мебель</span>
+												</a>
+											</div>
+
+											<div class="sep"></div>
+
+											<div class="menu_item">
+												<a href="/">
+													<span>О компании</span>
+													<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arr_down"></use></svg>
+												</a>
+											</div>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="cont row">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="">
+						</a>
+
+						<div class="email">
+							<a href="mailto:info@biopik.ru">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_email"></use></svg>
+								<span>info@biopik.ru</span>
+							</a>
+						</div>
+
+						<div class="phone">
+							<a href="tel:84957903363">8 (495)-790-33-63</a>
+						</div>
+
+						<a href="/" class="cart_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_cart"></use></svg>
+							<div class="count">5</div>
+						</a>
+
+						<button class="mob_menu_btn">
+							<span></span>
+						</button>
+
+						<div class="search">
+							<form action="">
+								<input type="text" name="" value="" class="input">
+
+								<div class="label">
+									<span>Поиск по сайту<span>, например <a href="/">весы прецизионные</a></span></span>
+								</div>
+
+								<button type="submit" class="submit_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_search"></use></svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="page_head">
+					<div class="cont">
+						<div class="breadcrumbs">
+							<a href="/">Главная</a> <span class="sep">—</span>
+							<a href="/">Каталог</a> <span class="sep">—</span>
+							<span class="current">Алфавитный указатель</span>
+						</div>
+
+						<h1 class="page_title">Каталог (алфавитный указатель)</h1>
+					</div>
+				</section>
+
+
+				<section class="catalog_info block">
+					<div class="cont">
+						<div class="alphabet">
+							<div class="alphabet_name">Русский алфавит</div>
+
+							<div class="grid">
+								<div class="item">
+									<div class="letter"><span>A</span></div>
+
+									<div class="items">
+										<div><a href="/">Автоматические дозаторы</a></div>
+										<div><a href="/">Амплификаторы</a></div>
+										<div><a href="/">Анализаторы влажности</a></div>
+										<div><a href="/">Автоклавы</a></div>
+										<div><a href="/">Анаэростаты</a></div>
+										<div><a href="/">Автоматические дозаторы</a></div>
+										<div><a href="/">Амплификаторы</a></div>
+										<div><a href="/">Анализаторы влажности</a></div>
+										<div><a href="/">Автоклавы</a></div>
+										<div><a href="/">Анаэростаты</a></div>
+										<div class="hide">
+											<div><a href="/">Амплификаторы</a></div>
+											<div><a href="/">Анализаторы влажности</a></div>
+											<div><a href="/">Автоклавы</a></div>
+											<div><a href="/">Анаэростаты</a></div>
+										</div>
+									</div>
+
+									<button class="spoler_btn">
+										<span>Посмотреть все</span>
+										<span>Свернуть список</span>
+									</button>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Б</span></div>
+
+									<div class="items">
+										<div><a href="/">Биопринтер 3D</a></div>
+										<div><a href="/">Бактерицидные облучатели</a></div>
+										<div><a href="/">Банки, бутыли, виалы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>В</span></div>
+
+									<div class="items">
+										<div><a href="/">Весы</a></div>
+										<div><a href="/">Вортексы</a></div>
+										<div><a href="/">Водяные бани</a></div>
+										<div><a href="/">Вакумные насосы</a></div>
+										<div><a href="/">Вискозиметры</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Г</span></div>
+
+									<div class="items">
+										<div><a href="/">Газоанализаторы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Д</span></div>
+
+									<div class="items">
+										<div><a href="/">Денситометры</a></div>
+										<div><a href="/">Дистилляторы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>И</span></div>
+
+									<div class="items">
+										<div><a href="/">Источники питания</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>К</span></div>
+
+									<div class="items">
+										<div><a href="/">Кресла и стулья (Лоип)</a></div>
+										<div><a href="/">Камеры для электрофореза</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>М</span></div>
+
+									<div class="items">
+										<div><a href="/">Мойки (Лоип)</a></div>
+										<div><a href="/">Морозильники (Кельвинаторы)</a></div>
+										<div><a href="/">Моечные машины</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Н</span></div>
+
+									<div class="items">
+										<div><a href="/">Насосы перистальтические</a></div>
+										<div><a href="/">Наконечники</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>П</span></div>
+
+									<div class="items">
+										<div><a href="/">Пробирки и планшеты</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>С</span></div>
+
+									<div class="items">
+										<div><a href="/">Счетчики клеток</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Т</span></div>
+
+									<div class="items">
+										<div><a href="/">Термостаты</a></div>
+										<div><a href="/">Трансиллюминаторы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>У</span></div>
+
+									<div class="items">
+										<div><a href="/">Ультразвуковые мойки</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Ф</span></div>
+
+									<div class="items">
+										<div><a href="/">Ферментеры</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Х</span></div>
+
+									<div class="items">
+										<div><a href="/">Хроматографические системы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Ц</span></div>
+
+									<div class="items">
+										<div><a href="/">Центрифуги</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Ш</span></div>
+
+									<div class="items">
+										<div><a href="/">Шейкеры</a></div>
+										<div><a href="/">Шкафы вытяжные</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>Э</span></div>
+
+									<div class="items">
+										<div><a href="/">Электропораторы</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="alphabet">
+							<div class="alphabet_name">Английский алфавит</div>
+
+							<div class="grid">
+								<div class="item">
+									<div class="letter"><span>A</span></div>
+
+									<div class="items">
+										<div><a href="/">Agilent (реактивы)</a></div>
+										<div><a href="/">Acros (реактивы)</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>B</span></div>
+
+									<div class="items">
+										<div><a href="/">BioLegend (реактивы)</a></div>
+										<div><a href="/">Biospringer</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>C</span></div>
+
+									<div class="items">
+										<div><a href="/">Costantino</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="letter"><span>D</span></div>
+
+									<div class="items">
+										<div><a href="/">Dharmacon 1</a></div>
+										<div><a href="/">Deltalab (чашки Петри)</a></div>
+										<div><a href="/">Dharmacon</a></div>
+										<div><a href="/">Deltalab (криопробирки)</a></div>
+										<div><a href="/">Deltalab (Наконечники для дозаторов)</a></div>
+										<div><a href="/">Dharmacon 2</a></div>
+										<div><a href="/">Deltalab (чашки Петри)</a></div>
+										<div><a href="/">Dharmacon 3</a></div>
+										<div><a href="/">Deltalab (криопробирки)</a></div>
+										<div><a href="/">Deltalab (Пипетки Пастера)</a></div>
+										<div><a href="/">Dharmacon 4</a></div>
+										<div class="hide">
+											<div><a href="/">Deltalab (чашки Петри)</a></div>
+											<div><a href="/">Dharmacon 5</a></div>
+											<div><a href="/">Deltalab (криопробирки)</a></div>
+											<div><a href="/">Deltalab (Пипетки Пастера)</a></div>
+										</div>
+									</div>
+
+									<button class="spoler_btn">
+										<span>Посмотреть все</span>
+										<span>Свернуть список</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="info">
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="links">
+							<div class="title">Информация</div>
+
+							<div class="items">
+								<div><a href="/">Новости</a></div>
+								<div><a href="/">О компании</a></div>
+								<div><a href="/">Контакты</a></div>
+								<div><a href="/">Доставка и оплата</a></div>
+								<div><a href="/">Поставщики</a></div>
+							</div>
+						</div>
+
+						<div class="links">
+							<div class="title">Каталог</div>
+
+							<div class="items">
+								<div><a href="/">Оборудование</a></div>
+								<div><a href="/">Пластикv</a></div>
+								<div><a href="/">Реактивы</a></div>
+								<div><a href="/">Мебель</a></div>
+								<div><a href="/">Алфавитный указатель</a></div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="socials">
+								<div class="title">Мы в социальных сетях</div>
+
+								<div class="items">
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<img src="images/ic_vk.svg" alt="">
+									</a>
+
+									<a href="/" target="_blank" rel="noopener nofollow">
+										<img src="images/ic_instagram.svg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="subscribe">
+								<div class="title">Подписаться на рассылку</div>
+
+								<form action="">
+									<input type="email" name="" value="" class="input" placeholder="Введите email">
+
+									<button type="submit" class="submit_btn">подписаться</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="contacts">
+							<div class="location">
+								142290, Московская область,<br>
+								г. Пущино, мкр. «В», д. 6А,<br>
+								офис 201
+							</div>
+
+							<div class="phone">
+								<a href="tel:84957903363">8 (495) 790 33 63</a>
+							</div>
+
+							<div class="email">
+								<a href="mailto:info@biopik.ru">info@biopik.ru</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">&copy; Биопик, 2022.</div>
+
+						<div class="links">
+							<div><a href="/">Политика конфиденциальности</a></div>
+						</div>
+
+						<div class="creator">
+							<a href="/">Создание сайта <b>Точка.ру</b></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal" id="get_prices_modal">
+			<div class="modal_head">
+				<div class="title">Получить коммерческое предложение</div>
+
+				<div class="desc">Менеджер подготовит предложение и позвонит, если потребуется уточнить детали заказа.</div>
+			</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="columns row">
+						<div class="line width1of3">
+							<div class="field">
+								<div class="label">Как к Вам обращаться?</div>
+								<input type="text" name="" value="" class="input" placeholder="Имя">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<div class="label">Электронная почта*:</div>
+								<input type="email" name="" value="" class="input" placeholder="example@mail.ru">
+							</div>
+						</div>
+
+						<div class="line width1of3">
+							<div class="field">
+								<div class="label">Телефон:</div>
+								<input type="tel" name="" value="" class="input" placeholder="+79045673344">
+							</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<div class="label">Комментарий (если есть)</div>
+							<textarea name=""></textarea>
+						</div>
+					</div>
+
+					<div class="line file">
+						<div class="field">
+							<input type="file" name="file" id="file">
+							<label for="file">Прикрепить файл (до 15 Мб)</label>
+						</div>
+					</div>
+
+					<div class="submit">
+						<div class="agree">
+							Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">политику конфиденциальности</a>
+						</div>
+
+						<button type="submit" class="submit_btn">отправить</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="callback_modal">
+			<div class="modal_head">
+				<div class="title">Заказать обратный звонок</div>
+
+				<div class="desc">Менеджер подготовит предложение и позвонит, если потребуется уточнить детали заказа.</div>
+			</div>
+
+			<div class="modal_data">
+				<form action="" class="form">
+					<div class="columns row">
+						<div class="line">
+							<div class="field">
+								<div class="label">Как к Вам обращаться?</div>
+								<input type="text" name="" value="" class="input" placeholder="Имя">
+							</div>
+						</div>
+
+						<div class="line">
+							<div class="field">
+								<div class="label">Телефон:</div>
+								<input type="tel" name="" value="" class="input" placeholder="+79045673344">
+							</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<div class="label">Ваш вопрос</div>
+							<textarea name=""></textarea>
+						</div>
+					</div>
+
+					<div class="submit">
+						<div class="agree">
+							Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и принимаю <a href="/" target="_blank">политику конфиденциальности</a>
+						</div>
+
+						<button type="submit" class="submit_btn">заказать</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
