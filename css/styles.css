@@ -1002,6 +1002,16 @@ header .phone a
     text-decoration: none;
 }
 
+header .fixed_phone
+{
+    font-size: 18px;
+    line-height: 24px;
+
+    display: none;
+
+    margin-left: 0;
+}
+
 
 
 header .callback_btn
@@ -1341,16 +1351,22 @@ header.fixed
 
 header.fixed .logo img
 {
+    width: auto;
     height: 67px;
 }
 
+
+header.fixed .data
+{
+    width: calc(100% - 140px);
+}
 
 header.fixed .data .row
 {
     display: none;
 }
 
-header .data .row ~ .row
+header.fixed .data .row ~ .row
 {
     margin-top: 10px;
 }
@@ -1358,6 +1374,27 @@ header .data .row ~ .row
 header.fixed .data .row:last-child
 {
     display: flex;
+}
+
+
+header.fixed .fixed_phone
+{
+    display: block;
+}
+
+
+header.fixed .catalog .btn,
+header.fixed .menu_item > a
+{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+header.fixed .menu
+{
+    width: calc(100% - 372px);
+    margin-left: 0;
 }
 
 

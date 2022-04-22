@@ -204,6 +204,24 @@
 
 
 
+    header.fixed .data
+    {
+        width: calc(100% - 111px);
+    }
+
+    header.fixed .fixed_phone
+    {
+        display: none;
+    }
+
+    header.fixed .menu
+    {
+        width: calc(100% - 172px);
+        margin-left: auto;
+    }
+
+
+
     /*------------
         Search
     ------------*/
