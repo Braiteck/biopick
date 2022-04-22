@@ -68,7 +68,8 @@
     }
 
 
-    header
+    header,
+    header.fixed
     {
         position: fixed;
         z-index: 101;
@@ -85,6 +86,7 @@
 
         transition: transform .3s linear;
         transform: translateX(-100%);
+        animation: none;
 
         background: #fff;
     }
@@ -258,6 +260,35 @@
     header .menu_item > a
     {
         justify-content: flex-start;
+    }
+
+
+    header.fixed .data,
+    header.fixed .menu
+    {
+        width: 100%;
+    }
+
+    header.fixed .data .row
+    {
+        display: flex;
+    }
+
+    header.fixed .data .row ~ .row
+    {
+        margin-top: 0;
+    }
+
+    header.fixed .catalog .btn
+    {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    header.fixed .menu_item > a
+    {
+        font-size: 17px;
+        line-height: 25px;
     }
 
 

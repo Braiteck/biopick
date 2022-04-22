@@ -630,6 +630,18 @@ $(window).on('load', () => {
 	headerInit && $(window).scrollTop() > headerHeight
 		? $('header').addClass('fixed')
 		: $('header').removeClass('fixed')
+
+
+	// Фикс. моб. шапка
+	mobHeaderInit = true,
+		mobHeaderHeight = $('.mob_header').outerHeight()
+
+	$('.mob_header').wrap('<div class="mob_header_wrap"></div>')
+	$('.mob_header_wrap').height(mobHeaderHeight)
+
+	mobHeaderInit && $(window).scrollTop() > mobHeaderHeight
+		? $('.mob_header').addClass('fixed')
+		: $('.mob_header').removeClass('fixed')
 })
 
 
@@ -663,6 +675,22 @@ $(window).on('resize', () => {
 		}, 100)
 
 
+		// Фикс. моб. шапка
+		mobHeaderInit = false
+		$('.mob_header_wrap').height('auto')
+
+		setTimeout(() => {
+			mobHeaderInit = true
+			mobHeaderHeight = $('.mob_header').outerHeight()
+
+			$('.mob_header_wrap').height(mobHeaderHeight)
+
+			mobHeaderInit && $(window).scrollTop() > mobHeaderHeight
+				? $('.mob_header').addClass('fixed')
+				: $('.mob_header').removeClass('fixed')
+		}, 100)
+
+
 		// Перезапись ширины окна
 		WW = $(window).width()
 	}
@@ -674,4 +702,10 @@ $(window).on('scroll', () => {
 	typeof headerInit !== 'undefined' && headerInit && $(window).scrollTop() > headerHeight
 		? $('header').addClass('fixed')
 		: $('header').removeClass('fixed')
+
+
+	// Фикс. моб. шапка
+	typeof mobHeaderInit !== 'undefined' && mobHeaderInit && $(window).scrollTop() > mobHeaderHeight
+		? $('.mob_header').addClass('fixed')
+		: $('.mob_header').removeClass('fixed')
 })

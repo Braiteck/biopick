@@ -1785,6 +1785,26 @@ header.fixed .menu
 
 
 
+.mob_header.fixed
+{
+    position: fixed;
+
+    margin: 0;
+    padding: 8px 0;
+
+    -webkit-animation: moveDown .5s;
+            animation: moveDown .5s;
+
+    background: #f8f8f8;
+}
+
+.mob_header.fixed .search
+{
+    display: none;
+}
+
+
+
 /*-------------
     Sidebar
 -------------*/
