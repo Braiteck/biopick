@@ -296,6 +296,7 @@
     /*-----------------
         Mob. header
     -----------------*/
+    .mob_header_wrap,
     .mob_header
     {
         display: block;

@@ -176,7 +176,7 @@ $(() => {
 	})
 
 
-	// Карусель в тесте
+	// Карусель в тексте
 	const textGallerySliders = []
 
 	$('.text_block .gallery.swiper').each(function (i) {

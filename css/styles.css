@@ -1549,6 +1549,11 @@ header.fixed .menu
 /*-----------------
     Mob. header
 -----------------*/
+.mob_header_wrap
+{
+    display: none;
+}
+
 .mob_header
 {
     position: relative;
