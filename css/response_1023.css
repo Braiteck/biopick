@@ -58,6 +58,13 @@
     /*------------
         Header
     ------------*/
+    .header_wrap
+    {
+        height: 0 !important;
+        margin: 0;
+    }
+
+
     header
     {
         position: fixed;
