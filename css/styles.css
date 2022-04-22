@@ -787,6 +787,17 @@ button
 /*------------
     Header
 ------------*/
+.header_wrap
+{
+    margin-bottom: 20px;
+}
+
+.header_wrap header
+{
+    margin: 0;
+}
+
+
 header
 {
     position: relative;
@@ -1310,6 +1321,71 @@ header .sep
     height: 24px;
 
     border-left: 1px dotted;
+}
+
+
+
+header.fixed
+{
+    position: fixed;
+
+    margin: 0;
+    padding: 8px 0;
+
+    -webkit-animation: moveDown .5s;
+            animation: moveDown .5s;
+
+    background: #f8f8f8;
+}
+
+
+header.fixed .logo img
+{
+    height: 67px;
+}
+
+
+header.fixed .data .row
+{
+    display: none;
+}
+
+header .data .row ~ .row
+{
+    margin-top: 10px;
+}
+
+header.fixed .data .row:last-child
+{
+    display: flex;
+}
+
+
+@-webkit-keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+
+@-moz-keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+
+@keyframes moveDown
+{
+    0%
+    {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
 }
 
 
